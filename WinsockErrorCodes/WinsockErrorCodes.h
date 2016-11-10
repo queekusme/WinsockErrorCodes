@@ -16,9 +16,6 @@
 #define _WINSOCK_ERROR_CODES
 
 #include <string>
-#include <winsock.h>
-
-#pragma comment(lib, "ws2_32.lib")
 
 namespace WSEC {
 	struct ErrorCode {
@@ -28,7 +25,7 @@ namespace WSEC {
 		std::string description;
 	};
 
-	ErrorCode getWinsockErrorCode(UINT providedErrorCode);
+	ErrorCode getWinsockErrorCode(unsigned int providedErrorCode);
 }
 
 #endif

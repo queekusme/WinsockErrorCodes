@@ -1,8 +1,8 @@
 set PATH=%PATH%;C:\Program Files\7-Zip\
 
-ECHO F|xcopy WinsockErrorCodes\WinsockErrorCodes.h tmp\includes\WinsockErrorCodes.h
-ECHO F|xcopy Debug\WinsockErrorCodes.lib tmp\libs\WinsockErrorCodes-DEBUG.lib
-ECHO F|xcopy Release\WinsockErrorCodes.lib tmp\libs\WinsockErrorCodes.lib
+ECHO F|xcopy WinsockErrorCodes\WinsockErrorCodes.h tmp\include\WinsockErrorCodes.h
+ECHO F|xcopy Debug\WinsockErrorCodes.lib tmp\lib\WinsockErrorCodes-DEBUG.lib
+ECHO F|xcopy Release\WinsockErrorCodes.lib tmp\lib\WinsockErrorCodes.lib
 ECHO D|xcopy Docs\* tmp\*
 
 cd tmp

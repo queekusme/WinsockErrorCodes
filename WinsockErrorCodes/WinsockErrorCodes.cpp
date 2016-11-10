@@ -14,11 +14,10 @@
 
 #include "WinsockErrorCodes.h"
 
-#include <winsock.h>
-#include <Windows.h>
+#include <winerror.h>
 
 namespace WSEC {
-	ErrorCode getWinsockErrorCode(UINT providedErrorCode) {
+	ErrorCode getWinsockErrorCode(unsigned int providedErrorCode) {
 		switch (providedErrorCode) {
 		case WSAEINTR: return{ WSAEINTR, "WSAEINTR", "Interrupted function call", "A blocking operation was interrupted by a call to WSACancelBlockingCall." };
 		case WSAEBADF: return{ WSAEBADF, "WSAEBADF", "File handle is not valid", "The file handle supplied is not valid." };
