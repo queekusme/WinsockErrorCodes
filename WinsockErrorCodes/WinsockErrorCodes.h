@@ -26,6 +26,7 @@ namespace WSEC {
 	};
 
 	ErrorCode getWinsockErrorCode(unsigned int providedErrorCode);
+	std::string getFormattedDescription(unsigned int providedErrorCode);
 }
 
 #endif
