@@ -20,13 +20,15 @@
 
 #pragma comment(lib, "ws2_32.lib")
 
-struct ErrorCode {
-	int errorCode;
-	std::string humanErrorCode;
-	std::string name;
-	std::string description;
-};
+namespace WSEC {
+	struct ErrorCode {
+		int errorCode;
+		std::string humanErrorCode;
+		std::string name;
+		std::string description;
+	};
 
-ErrorCode getWinsockErrorCode(UINT providedErrorCode);
+	ErrorCode getWinsockErrorCode(UINT providedErrorCode);
+}
 
 #endif
