@@ -107,7 +107,7 @@ namespace WSEC {
 		case WSA_QOS_ESDMODEOBJ: return{ WSA_QOS_ESDMODEOBJ, "WSA_QOS_ESDMODEOBJ", "Invalid QoS shape discard mode object", getFormattedDescription(WSA_QOS_ESDMODEOBJ) };
 		case WSA_QOS_ESHAPERATEOBJ: return{ WSA_QOS_ESHAPERATEOBJ, "WSA_QOS_ESHAPERATEOBJ", "Invalid QoS shaping rate object", getFormattedDescription(WSA_QOS_ESHAPERATEOBJ) };
 		case WSA_QOS_RESERVED_PETYPE: return{ WSA_QOS_RESERVED_PETYPE, "WSA_QOS_RESERVED_PETYPE", "Reserved policy QoS element type", getFormattedDescription(WSA_QOS_RESERVED_PETYPE) };
-		default: return{ -1, "UNKNOWN", "Unknown Error", "Error not defined!" };
+		default: return{ providedErrorCode, "UNKNOWN", "Unknown Error", "Error not defined!" };
 		}
 	}
 
